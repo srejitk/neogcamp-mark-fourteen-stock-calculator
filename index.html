@@ -3,9 +3,10 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
 
-  <body>
+  <body id="#main">
     <div id="app" class="container">
       <h1 id="title">Stonks Calculator</h1>
 
@@ -16,26 +17,34 @@
       <label for="sell_price">Selling Price: </label>
       <input type="number" id="sell_price" />
       <button type="submit" id="chk_btn">Let's Go!</button>
-      <img
-        src="https://c.tenor.com/iDLclWLUuq8AAAAC/cry-tear.gif"
-        id="gif-sad"
-      />
-      <img
-        src="https://c.tenor.com/F8uKopL0WXwAAAAi/smiley-emoji.gif"
-        id="gif-happy"
-      />
-      <img
-        src="https://c.tenor.com/ErMabcdfIgUAAAAi/dm4uz3-foekoe.gif"
-        alt=""
-        id="gif-meh"
-      />
-      <img
-        src="https://c.tenor.com/6ij8yL_jK2sAAAAi/dm4uz3-foekoe.gif"
-        id="gif-sigh"
-      />
       <div id="output-id"></div>
-
+      <img src="/resources/cry.gif" id="gif-sad" />
+      <img src="/resources/smile.gif" id="gif-happy" />
+      <img src="/resources/meh.gif" id="gif-meh" />
+      <img src="/resources/sigh.gif" id="gif-sigh" />
       <script src="src/index.js"></script>
+      <footer class="footer-class">
+        <div class="footer-items">
+          <div class="footer-header">Social Media Handles</div>
+          <div class="footer-list">
+            <ul class="social-links">
+              <li class="list-item-inline">
+                <a href="https://www.github.com/srejitk" class="link">Github</a>
+              </li>
+              <li class="list-item-inline">
+                <a href="https://www.twitter.com/srejitk" class="link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="list-item-inline">
+                <a href="https://www.linkedin.com/in/srejitk/" class="link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

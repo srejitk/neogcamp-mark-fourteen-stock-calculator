@@ -1,12 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
+  margin: 0rem;
+  padding: 0rem;
+  width: 100%;
+  background: #536dfe;
+  color: white;
+}
+
+#app {
+  margin: 0rem;
+  padding: 0rem;
 }
 
 label {
   display: block;
-
   padding: 0.5rem;
+  color: white;
 }
 
 input {
@@ -16,22 +28,58 @@ input {
   width: 40%;
   display: "block";
   text-align: center;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  border-radius: 6px;
 }
 
 button {
   padding: 0.5rem;
   margin-top: 1rem;
   width: 20%;
-}
-
-#output-id {
-  padding: 1rem;
+  color: white;
+  background: #3d5afe;
+  border: 2px solid white;
 }
 
 img {
-  display: block;
+  display: none;
   padding: 2rem;
   margin: auto;
   width: 6rem;
   height: 6rem;
+}
+
+#output-id {
+  padding: 2rem;
+}
+
+.footer-class a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem;
+  color: white;
+}
+
+.footer-class a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  background: white;
+  padding: 1rem;
+  border-radius: 18px;
+  color: #3d5afe;
+}
+
+.footer-class ul {
+  padding: 1rem;
+}
+
+.footer-class li {
+  display: inline;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.footer-class {
+  margin-top: 5rem;
 }
