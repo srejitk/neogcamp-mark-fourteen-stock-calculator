@@ -35,7 +35,7 @@ function calculateReturns(initial, qty, current) {
 
   if (buy > sell) {
     var loss = (buy - sell) * share_qty;
-    var loss_perc = ((loss * 100) / buy).toFixed(2);
+    var loss_perc = ((loss * 100) / buy*share_qty).toFixed(2);
     output.innerText = `Ouch! You made a loss of ${loss}, that's ${loss_perc}%.`;
     gif_sad.style.display = "block";
     gif_happy.style.display = "none";
@@ -46,7 +46,7 @@ function calculateReturns(initial, qty, current) {
     }
   } else if (sell > buy) {
     var profit = (sell - buy) * share_qty;
-    var profit_perc = ((profit * 100) / buy).toFixed(2);
+    var profit_perc = ((profit * 100) / buy*share_qty).toFixed(2);
     output.innerText = `Ouch! You made a profit of ${profit}, that's ${profit_perc}%.`;
     gif_sad.style.display = "none";
     gif_happy.style.display = "block";
